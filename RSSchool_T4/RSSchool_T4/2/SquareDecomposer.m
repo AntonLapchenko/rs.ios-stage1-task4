@@ -2,24 +2,26 @@
 
 @implementation SquareDecomposer
 - (NSArray <NSNumber*>*)decomposeNumber:(NSNumber*)number {
-    NSMutableArray *result = [NSMutableArray new];
-    [result addObjectsFromArray:[self decomposer:[number integerValue] and:[number integerValue] * [number integerValue]]];
-    if (result == nil) {
+    NSMutableArray *resultArray = [self decomposer:number remain:[ NSNumber numberWithInteger:[number integerValue] * [number integerValue]]];
+    if (resultArray == nil) {
         return nil;
     } else {
-        return result;
+        [resultArray removeObject:[resultArray lastObject]];
+        return  resultArray;
     }
 }
 
--(NSMutableArray*)decomposer:(NSInteger)n and:(NSInteger)remain{
-    if (remain == 0) {
-        return nil;
+- (NSMutableArray *)decomposer:(NSNumber *)n remain:(NSNumber *)remain {
+    NSMutableArray *result = [NSMutableArray array];
+    if ([remain integerValue] == 0) {
+        [result addObject:n];
+        return result;
     }
-    for (NSInteger i = n - 1; i > 0; i--) {
-        if ((remain - i * i) >= 0) {
-            NSMutableArray *result = [[NSMutableArray alloc] initWithArray:[self decomposer: i and:(remain - i * i)]];
-            if (result != nil) {
-                [result addObject:[NSNumber numberWithInteger:n]];
+    for (NSInteger i = [n integerValue] - 1; i > 0; i--) {
+        if ([remain integerValue] - i * i >= 0) {
+            NSMutableArray *result = [self decomposer:[NSNumber numberWithInteger: i] remain:[NSNumber numberWithInteger:[remain integerValue] - i * i]];
+            if (result) {
+                [result addObject:n];
                 return result;
             }
         }
