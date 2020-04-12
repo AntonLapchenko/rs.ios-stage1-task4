@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10EDAD8F2440FF7E0051E26C /* NSMutableArray+AdditionalQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 10EDAD8E2440FF7E0051E26C /* NSMutableArray+AdditionalQueue.m */; };
-		10EDAD922440FFA60051E26C /* TreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 10EDAD902440FFA50051E26C /* TreeNode.m */; };
+		1049965A2443A021003A3E13 /* TreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 104996592443A021003A3E13 /* TreeNode.m */; };
+		1049965D2443A081003A3E13 /* NSMutableArray+AdditionalQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1049965C2443A081003A3E13 /* NSMutableArray+AdditionalQueue.m */; };
 		25787FDA243F8E5F0066701D /* SquareDecomposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 25787FCA243F8E5F0066701D /* SquareDecomposer.m */; };
 		25787FDB243F8E5F0066701D /* SquareDecomposer.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 25787FCB243F8E5F0066701D /* SquareDecomposer.pdf */; };
 		25787FDC243F8E5F0066701D /* ArrayCalculator.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 25787FCE243F8E5F0066701D /* ArrayCalculator.pdf */; };
@@ -39,10 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10EDAD8D2440FF7E0051E26C /* NSMutableArray+AdditionalQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+AdditionalQueue.h"; path = "../../../../Downloads/ios-Tasks-Task3-4/Tasks/RSSchool_T3/RSSchool_T3/2/NSMutableArray+AdditionalQueue.h"; sourceTree = "<group>"; };
-		10EDAD8E2440FF7E0051E26C /* NSMutableArray+AdditionalQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+AdditionalQueue.m"; path = "../../../../Downloads/ios-Tasks-Task3-4/Tasks/RSSchool_T3/RSSchool_T3/2/NSMutableArray+AdditionalQueue.m"; sourceTree = "<group>"; };
-		10EDAD902440FFA50051E26C /* TreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TreeNode.m; path = "../../../../Downloads/ios-Tasks-Task3-4/Tasks/RSSchool_T3/RSSchool_T3/2/TreeNode.m"; sourceTree = "<group>"; };
-		10EDAD912440FFA60051E26C /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TreeNode.h; path = "../../../../Downloads/ios-Tasks-Task3-4/Tasks/RSSchool_T3/RSSchool_T3/2/TreeNode.h"; sourceTree = "<group>"; };
+		104996582443A021003A3E13 /* TreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
+		104996592443A021003A3E13 /* TreeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeNode.m; sourceTree = "<group>"; };
+		1049965B2443A081003A3E13 /* NSMutableArray+AdditionalQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+AdditionalQueue.h"; sourceTree = "<group>"; };
+		1049965C2443A081003A3E13 /* NSMutableArray+AdditionalQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+AdditionalQueue.m"; sourceTree = "<group>"; };
 		25787FB1243F85B40066701D /* RSSchool_T4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSchool_T4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25787FB5243F85B40066701D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25787FCA243F8E5F0066701D /* SquareDecomposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareDecomposer.m; sourceTree = "<group>"; };
@@ -128,10 +128,10 @@
 				25787FD2243F8E5F0066701D /* ExampleTrees.png */,
 				25787FD3243F8E5F0066701D /* FullBinaryTrees.h */,
 				25787FD5243F8E5F0066701D /* FullBinaryTrees.m */,
-				10EDAD912440FFA60051E26C /* TreeNode.h */,
-				10EDAD902440FFA50051E26C /* TreeNode.m */,
-				10EDAD8D2440FF7E0051E26C /* NSMutableArray+AdditionalQueue.h */,
-				10EDAD8E2440FF7E0051E26C /* NSMutableArray+AdditionalQueue.m */,
+				104996582443A021003A3E13 /* TreeNode.h */,
+				104996592443A021003A3E13 /* TreeNode.m */,
+				1049965B2443A081003A3E13 /* NSMutableArray+AdditionalQueue.h */,
+				1049965C2443A081003A3E13 /* NSMutableArray+AdditionalQueue.m */,
 			);
 			path = 4;
 			sourceTree = "<group>";
@@ -296,12 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1049965A2443A021003A3E13 /* TreeNode.m in Sources */,
 				25787FE0243F8E5F0066701D /* FullBinaryTrees.m in Sources */,
 				BD47B55B2268EDA10060BDF3 /* main.m in Sources */,
 				25787FDD243F8E5F0066701D /* ArrayCalculator.m in Sources */,
-				10EDAD922440FFA60051E26C /* TreeNode.m in Sources */,
+				1049965D2443A081003A3E13 /* NSMutableArray+AdditionalQueue.m in Sources */,
 				BD47B5532268ED9F0060BDF3 /* AppDelegate.m in Sources */,
-				10EDAD8F2440FF7E0051E26C /* NSMutableArray+AdditionalQueue.m in Sources */,
 				25787FE1243F8E5F0066701D /* TelephoneFinder.m in Sources */,
 				25787FDA243F8E5F0066701D /* SquareDecomposer.m in Sources */,
 			);
